@@ -1,0 +1,87 @@
+:root {
+  --color-primary: #cdd9e5;
+  --border-color: #2d3139;
+
+  --color-surface-100: #010409;
+  --color-surface-200: #0d1117;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}  
+
+body {
+  background-color: var(--color-surface-200);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  gap: 8px;
+
+  background: var(--color-surface-100);
+  border-bottom: 1px solid var(--border-color);
+  color: var(--color-primary);
+}
+
+nav header {
+  display: flex;
+  padding: 8px;
+  gap: 5px;
+  align-items: center;
+  align-content: center;
+}
+
+nav section {
+  display: flex;
+  gap: 10px;
+  align-content: center;
+  align-items: center;
+}
+
+.nav-btn, nav header p {
+  display: flex;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-btn p, nav header p {
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+nav header p:hover, .nav-btn:hover {
+  background-color: var(--color-surface-200);
+}
+
+.nav-icon {
+  max-height: 20px;
+}
+
+#nav-design-img {
+  position: absolute;
+  z-index: 999;
+  top: -90px;
+  right: -30px;
+
+  display: none;
+}
+
+#logo {
+  flex-shrink: 0;
+  max-height: 38px;
+}
+
+@media only screen and (min-width: 800px) {
+  #nav-design-img {
+    display: block;
+  }
+}
