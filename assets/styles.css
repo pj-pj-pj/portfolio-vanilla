@@ -73,6 +73,10 @@ nav section {
   white-space: nowrap;
 }
 
+nav section::-webkit-scrollbar {
+  display: none;
+}
+
 .nav-btn, nav header p, #loc div {
   display: flex;
   gap: 5px;
@@ -259,6 +263,28 @@ hr {
   width: 50px;
 }
 /* overview */
+
+/* resume */
+#resume-container {
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100%;
+}
+
+#resume-container iframe {
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+/* resume */
+
 
 @media only screen and (min-width: 600px) {
   #profile-image {
