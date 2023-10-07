@@ -12,6 +12,7 @@ import vscSvg from './assets/vscode-original.svg';
 export default function overviewInit() {
   const intro = document.querySelector('main #content #container');
   intro.className = 'dynamic-page';
+  document.querySelector('p#active-title').textContent = 'OVERVIEW.md';
 
   const bmo = document.createElement('img');
   bmo.className = 'gif';
