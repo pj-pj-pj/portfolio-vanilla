@@ -206,29 +206,30 @@ hr {
   width: 100%;
 }
 
-#overview {
+.dynamic-page {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 30px;
 }
 
-#overview h2.sub-title {
+.dynamic-page h2.sub-title {
   align-self: flex-start;
 }
 
-#overview h3 {
+.dynamic-page h3 {
   align-self: flex-start;
   font-weight: lighter;
   margin: 0;
   margin-bottom: 10px;
 }
 
-#overview p {
+.dynamic-page p {
   align-self: flex-start;
   margin-left: 15px;
 }
 
-#overview img.gif {
+.dynamic-page img.gif {
   width: 150px;
 }
 
@@ -250,7 +251,7 @@ hr {
   align-items: center;
   justify-content: center;
   gap: 5px;
-  margin-top: 15px;
+  margin-top: 30px;
   flex-wrap: wrap;
 }
 
