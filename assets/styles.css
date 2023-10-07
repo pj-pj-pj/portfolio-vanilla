@@ -4,11 +4,10 @@
   --lighter-border-color: #3f4450;
 
   --color-surface-100: #010409;
-  --color-surface-200: #11161e;
+  --color-surface-200: #0f1318;
 }
 
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,9 +16,18 @@ html, body {
 body {
   background-color: var(--color-surface-200);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--color-primary);
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  color: var(--color-primary);
+}
+
+footer {
+  font-size: 13px;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  padding-bottom: 2%;
 }
 
 p {
@@ -98,13 +106,13 @@ nav header p:hover, .nav-btn:hover {
   position: absolute;
   z-index: 999;
   top: 30px;
-  right: 0px;
+  right: 40px;
 
   display: none;
 }
 
 #nav-design-img img {
-  max-height: 15rem;
+  max-height: 12rem;
 }
 
 #logo {
@@ -141,7 +149,6 @@ profile {
 profile div i {
   font-weight: lighter;
   opacity: 0.7;
-  font-size: 17px;
 }
 
 #profile-image {
@@ -183,6 +190,9 @@ main #content {
 #content header {
   display: flex;
   gap: 5px;
+  font-size: 13px;
+  margin-top: 8px;
+  font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace !important;;
 }
 
 #content header span {
@@ -190,9 +200,72 @@ main #content {
 }
 /* main */
 
+/* overview */
+hr {
+  border: 1px solid var(--border-color);
+  width: 100%;
+}
+
+#overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#overview h2.sub-title {
+  align-self: flex-start;
+}
+
+#overview h3 {
+  align-self: flex-start;
+  font-weight: lighter;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#overview p {
+  align-self: flex-start;
+  margin-left: 15px;
+}
+
+#overview img.gif {
+  width: 150px;
+}
+
+#bmo-quote {
+  text-align: center;
+  margin-top: 25px;
+}
+
+#bmo-quote h2 {
+  margin: 0;
+}
+
+#bmo-quote h3 {
+  margin-top: 10px;
+}
+
+#tools-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+#tools-container img{
+  width: 50px;
+}
+/* overview */
+
 @media only screen and (min-width: 600px) {
   #profile-image {
     max-height: 120px;
+  }
+
+  profile div i {
+    font-size: 20px;
   }
 }
 
@@ -220,11 +293,11 @@ main #content {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
   content {
     grid-template-columns: 360px 1fr;
 
-    min-width: 1200px;
+    min-width: 1400px;
     margin-left: auto;
     margin-right: auto;
   }
