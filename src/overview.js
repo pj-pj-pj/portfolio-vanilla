@@ -10,9 +10,8 @@ import ubuntuSvg from './assets/ubuntu-plain.svg';
 import vscSvg from './assets/vscode-original.svg';
 
 export default function overviewInit() {
-  const container = document.querySelector('main #content');
-  const intro = document.createElement('div');
-  intro.id = 'overview';
+  const intro = document.querySelector('main #content #container');
+  intro.className = 'dynamic-page';
 
   const bmo = document.createElement('img');
   bmo.className = 'gif';
@@ -68,6 +67,4 @@ export default function overviewInit() {
   icons.appendChild(document.createElement('img')).src = ubuntuSvg;
   icons.appendChild(document.createElement('img')).src = vscSvg;
   intro.append(icons);
-
-  container.append(intro);
 }
