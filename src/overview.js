@@ -51,11 +51,11 @@ export default function overviewInit() {
   skillsTt.textContent = '⚙️ Skills and Tools:';
   intro.append(skillsTt);
   intro.appendChild(document.createElement('p')).textContent =
-    '- 🏛️ proficient in structuring web content using HTMl, and always striving to improve my markup for better semantics and accessibility.';
+    '- 🏛️ proficient in structuring web content using HTML, and always striving to improve my markup for better semantics and accessibility.';
   intro.appendChild(document.createElement('p')).textContent =
     '- 🎨 actively learning new CSS techniques to style web pages creatively';
   intro.appendChild(document.createElement('p')).textContent =
-    '- 🤹🏻‍♀️ dedicated to expanding my skills to create interactive and dynamic web interfaces with Javascript.';
+    '- 🤹🏻‍♀️ dedicated to expanding my skills to create interactive and dynamic web interfaces with Javascript';
 
   const icons = document.createElement('div');
   icons.id = 'tools-container';
