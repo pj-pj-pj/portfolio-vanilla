@@ -22,10 +22,9 @@ export default function resumeInit() {
 
   const resumeDiv = document.createElement('div');
   resumeDiv.id = 'resume-container';
-  const resumeContainer = document.createElement('iframe');
+  const resumeContainer = document.createElement('embed');
   resumeContainer.src = resumePdf;
-  resumeContainer.objectFit = 'contain';
-  resumeContainer.type = 'application/pdf';
+
   resumeDiv.append(resumeContainer);
   intro.append(resumeDiv);
 }
