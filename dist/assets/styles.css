@@ -8,6 +8,11 @@
   --color-surface-200: #0f1318;
 }
 
+::selection {
+  color: blue;
+  background: yellow;
+}
+
 html, body {
   margin: 0;
   padding: 0;
