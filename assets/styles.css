@@ -273,7 +273,7 @@ hr {
   padding-top: 100%;
 }
 
-#resume-container iframe {
+#resume-container embed {
   border: 0;
   position: absolute;
   top: 0;
