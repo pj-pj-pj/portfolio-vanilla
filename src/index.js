@@ -4,7 +4,18 @@ import resumeInit from './resume';
 import contactInit from './contact';
 
 const container = document.querySelector('main #content #container');
-document.querySelector('#overview-btn').addEventListener('click', () => {
+const navSection = document.querySelectorAll('.nav-btn p');
+
+navSection.forEach((section) => {
+  section.addEventListener('click', () => {
+    document
+      .querySelector('p.active-section')
+      .classList.remove('active-section');
+    section.classList.add('active-section');
+  });
+});
+
+document.querySelector('#overview-btn').addEventListener('click', (e) => {
   unchild(container);
   overviewInit();
 });
