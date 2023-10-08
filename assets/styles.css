@@ -271,7 +271,7 @@ hr {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 100%;
+  padding-top: 50%;
 }
 
 #resume-container embed {
@@ -283,6 +283,7 @@ hr {
   right: 0;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 
 .download-btn {
