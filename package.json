@@ -17,6 +17,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "file-loader": "^6.2.0",
+    "json-loader": "^0.5.7",
     "pdfobject": "^2.2.12",
     "prettier": "^3.0.3",
     "webpack": "^5.88.2",
