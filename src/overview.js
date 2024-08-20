@@ -34,8 +34,6 @@ export default function overviewInit() {
     '- 👟 pursuing a Computer Science degree';
   intro.appendChild(document.createElement('p')).textContent =
     '- 🧭 crafting webdev experiences and soaking up knowledge along the way';
-  intro.appendChild(document.createElement('p')).textContent =
-    '- 🫱🏼‍🫲🏼 interning at Codsoft';
 
   const bmoQuote = document.createElement('div');
   bmoQuote.id = 'bmo-quote';
